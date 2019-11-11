@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "classmap": [
+            "www/index.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
+}
