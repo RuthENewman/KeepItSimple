@@ -1,0 +1,53 @@
+.form {
+    display: inline-block;
+
+    &__details {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+      font-size: 2rem;
+      font-family: inherit;
+      color: inherit;
+      padding: 2rem 8rem;
+      background-color: rgba($white, .8);
+      border: none;
+      width: 90%;
+      display: block;
+      transition: all .3s;
+      text-align: center;
+      border-radius: 3%;
+
+      &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($black, .1);
+            border-bottom: 3px solid $blue-light;
+      }
+
+
+      &:focus:invalid {
+        border-bottom: 3px solid $red-base;
+      }
+
+      &::-wekit-input-placeholder {
+        color: $grey-darker;
+      }
+    }
+
+    &__label {
+        font-family: inherit;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-left: 2rem;
+        margin-top: .3rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+    }
+
+}
