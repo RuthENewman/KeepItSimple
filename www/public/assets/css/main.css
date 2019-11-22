@@ -81,8 +81,8 @@ body {
   margin-bottom: 5rem; }
   .main-heading--large {
     display: block;
-    color: #fff;
-    font-size: 6rem;
+    color: #019fbb;
+    font-size: 3rem;
     font-weight: 700;
     animation-name: moveInFromTop;
     animation-duration: 2s; }
@@ -92,9 +92,9 @@ body {
         font-size: 5rem; } }
   .main-heading--sub {
     display: block;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 4rem;
-    letter-spacing: 1.5rem;
+    letter-spacing: .5rem;
     animation-name: moveInFromLeft;
     animation-duration: 3s;
     animation-delay: 2s;
@@ -153,7 +153,11 @@ body {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.1 0.5rem;
-  color: #fff; }
+  color: #019fbb; }
+  .tertiary-heading--white {
+    color: white;
+    margin-top: 1rem;
+    font-size: 2rem; }
 
 .para {
   font-size: 14px; }
@@ -267,12 +271,13 @@ body {
 .form {
   display: inline-block; }
   .form__details {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
   .form__input {
     font-size: 2rem;
     font-family: inherit;
     color: inherit;
-    padding: 2rem 8rem;
+    padding: 10rem 20rem;
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
     width: 90%;
@@ -300,6 +305,80 @@ body {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem); }
+
+table {
+  text-align: left; }
+  table tbody th, table tbody td {
+    padding-right: 10px;
+    padding-bottom: 5px;
+    vertical-align: top; }
+
+table.key_value {
+  width: 100%; }
+  table.key_value tbody th {
+    font-weight: 600;
+    padding-right: 20px;
+    width: 35%; }
+
+table.receipt {
+  border-spacing: 0;
+  width: calc(100% + 18px);
+  border: 1px solid #ddd;
+  margin: 0 -9px; }
+  table.receipt th, table.receipt td {
+    border-right: 1px solid #ddd;
+    padding: 4px 9px; }
+    table.receipt th:last-child, table.receipt td:last-child {
+      border-right: 0; }
+  table.receipt th {
+    font-weight: 600; }
+  table.receipt thead th {
+    border-bottom: 1px solid #ddd; }
+
+table.tabular_data {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left; }
+  table.tabular_data th {
+    padding: 10px; }
+  table.tabular_data td {
+    padding: 16px 10px; }
+    table.tabular_data td.action_icon_links {
+      width: 1px;
+      padding: 5px 10px 0 10px;
+      text-align: right;
+      white-space: nowrap;
+      position: relative; }
+    table.tabular_data td.word_break {
+      word-break: break-word; }
+  table.tabular_data thead tr, table.tabular_data tfoot tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600; }
+  table.tabular_data thead tr th {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #bababa;
+    font-weight: 600; }
+  table.tabular_data tbody tr td {
+    vertical-align: top;
+    border-bottom: 1px solid #ddd; }
+  table.tabular_data td.overflow_elipsis {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.tr_links.trLinksInitialised tbody tr {
+  cursor: pointer; }
+  .tr_links.trLinksInitialised tbody tr:hover {
+    background: #f9f9fa !important; }
+    .tr_links.trLinksInitialised tbody tr:hover td > a:first-child {
+      text-decoration: underline; }
+
+.empty_table_data {
+  width: 100%;
+  padding: 40px 0; }
 
 .home-section {
   padding: 1rem 0;

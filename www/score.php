@@ -13,18 +13,15 @@
 </head>
 <body>
     <section class="home-section">
-        <div class="u-centre-text header-section u-margin-top-large u-margin-bottom-medium">
+        <div class="u-centre-text header-section u-margin-top-small u-margin-bottom-medium">
             <h1 class="main-heading--large">Keep it SIMPLE</h1>
-            <h3 class="secondary-heading--purple">Your score</h3>
-        </div>
-        <div>
-            <?php
-            ?>
+            <h3 class="main-heading--sub">Your score</h3>
         </div>
         <div class="u-centre-text">
-        <h4 class="tertiary-heading u-margin-bottom-medium">Your overall rating</h4>
-            <h3>RED / AMBER / GREEN</h3>
-            <table>
+            <h4 class="tertiary-heading u-margin-bottom-small">Your overall rating</h4>
+            <h3 class="secondary-heading">RED / AMBER / GREEN</h3>
+        </div>
+        <table class="u-centre-text tabular_data u-margin-top-medium">
                 <thead>
                     <th>Type</th>
                     <th>Details</th>

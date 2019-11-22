@@ -13,7 +13,7 @@
 </head>
 <body>
     <section class="home-section">
-        <div class="u-centre-text header-section u-margin-top-large u-margin-bottom-medium">
+        <div class="u-centre-text header-section u-margin-top-small u-margin-bottom-medium">
             <h1 class="main-heading--large">Keep it SIMPLE</h1>
             <h3 class="secondary-heading--purple">Scoring the simplicity of a text</h3>
         </div>
@@ -22,10 +22,10 @@
             ?>
         </div>
         <div class="form-section u-centre-text">
-        <h4 class="tertiary-heading u-margin-bottom-medium">Input your text! </h4>
+        <h4 class="tertiary-heading--white u-margin-bottom-medium">Input your text! </h4>
             <form class="form" method="POST" action="score.php">
                 <div class="form__details u-centre-text input u-margin-bottom-medium">
-                    <textarea class="form__input" type="text" placeholder="Your text"></textarea>
+                    <textarea class="form__input" type="text" placeholder="Add your text here"></textarea>
                 </div>
                 <button class="btn u-margin-bottom-small" type="submit">Submit</button>
             </form>

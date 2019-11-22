@@ -1,0 +1,136 @@
+
+table {
+    text-align: left;
+
+    tbody {
+
+      th, td {
+        padding-right: 10px;
+        padding-bottom: 5px;
+        vertical-align: top;
+      }
+    }
+  }
+
+  table.key_value {
+    width: 100%;
+
+    tbody {
+
+      th {
+        font-weight: 600;
+        padding-right: 20px;
+        width: 35%;
+      }
+    }
+  }
+
+  table.receipt {
+    border-spacing: 0;
+    width: calc(100% + 18px);
+    border: 1px solid $grey-lighter;
+    margin: 0 -9px;
+
+    th, td {
+      border-right: 1px solid $grey-lighter;
+      padding: 4px 9px;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    th {
+      font-weight: 600;
+    }
+
+    thead {
+
+      th {
+        border-bottom: 1px solid $grey-lighter;
+      }
+    }
+  }
+
+  table.tabular_data {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+
+    th {
+      padding: 10px;
+    }
+
+    td {
+      padding: 16px 10px;
+
+      &.action_icon_links {
+        width: 1px;
+        padding: 5px 10px 0 10px;
+        text-align: right;
+        white-space: nowrap;
+        position: relative;
+      }
+
+      &.word_break {
+        word-break: break-word;
+      }
+    }
+
+    thead tr, tfoot tr {
+      border-top: 1px solid $grey-lighter;
+      border-bottom: 1px solid $grey-lighter;
+      font-weight: 600;
+    }
+
+    thead {
+
+      tr th {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $grey-light;
+        font-weight: 600;
+      }
+    }
+
+    tbody {
+
+      tr {
+
+        td {
+          vertical-align: top;
+          border-bottom: 1px solid $grey-lighter;
+
+        }
+      }
+    }
+
+    td.overflow_elipsis {
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .tr_links.trLinksInitialised {
+
+    tbody {
+      tr {
+        cursor: pointer;
+
+        &:hover {
+          background: $grey-lightest !important;
+
+          td>a:first-child {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .empty_table_data {
+    width: 100%;
+    padding: 40px 0;
+  }

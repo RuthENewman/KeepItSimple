@@ -12,8 +12,8 @@ body {
 
     &--large {
       display: block;
-      color: $white;
-      font-size: 6rem;
+      color: $blue-light;
+      font-size: 3rem;
       font-weight: 700;
       animation-name: moveInFromTop;
       animation-duration: 2s;
@@ -26,9 +26,9 @@ body {
 
     &--sub {
       display: block;
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: 4rem;
-      letter-spacing: 1.5rem;
+      letter-spacing: .5rem;
       animation-name: moveInFromLeft;
       animation-duration: 3s;
       animation-delay: 2s;
@@ -107,7 +107,13 @@ body {
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: .1.5rem;
-    color: $white;
+    color: $blue-light;
+
+    &--white {
+      color: white;
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
   }
 
   .para {
