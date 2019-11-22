@@ -7,7 +7,7 @@ services:
     volumes:
       - /Users/ruthnewman/documents/keep-it-simple/www:/var/www/app/public/
     ports:
-      - 3306:80
+      - 8580:80
     links:
       - php
   php:
@@ -21,7 +21,7 @@ services:
   mysql:
     image: mysql:5.6
     ports:
-      - 14406:3306
+      - 15506:3306
     environment:
         - MYSQL_ROOT_PASSWORD=root
         - MYSQL_DATABASE=keepitsimple
@@ -36,7 +36,7 @@ services:
     links:
        - mysql
     ports:
-       - 19090:80
+       - 15050:80
   sass:
     build:
       context: ./docker/sass
