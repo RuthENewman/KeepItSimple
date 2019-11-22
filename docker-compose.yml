@@ -5,7 +5,7 @@ services:
     build:
       context: ./docker/apache
     volumes:
-      - /Users/ruthnewman/documents/stellar/www:/var/www/app/public/
+      - /Users/ruthnewman/documents/keep-it-simple/www:/var/www/app/public/
     ports:
       - 3306:80
     links:
@@ -16,7 +16,7 @@ services:
     links:
       - mysql
     volumes:
-      - /Users/ruthnewman/documents/stellar/www:/var/www/app/public/
+      - /Users/ruthnewman/documents/keep-it-simple/www:/var/www/app/public/
     working_dir: /var/www/public
   mysql:
     image: mysql:5.6
@@ -24,7 +24,7 @@ services:
       - 14406:3306
     environment:
         - MYSQL_ROOT_PASSWORD=root
-        - MYSQL_DATABASE=stellar
+        - MYSQL_DATABASE=keepitsimple
     volumes:
         - ./application/db:/docker-entrypoint-initdb.d
   phpmyadmin:

@@ -23,7 +23,7 @@
         </div>
         <div class="form-section u-centre-text">
         <h4 class="tertiary-heading u-margin-bottom-medium">Input your text! </h4>
-            <form class="form">
+            <form class="form" method="POST" action="score.php">
                 <div class="form__details u-centre-text input u-margin-bottom-medium">
                     <textarea class="form__input" type="text" placeholder="Your text"></textarea>
                 </div>
